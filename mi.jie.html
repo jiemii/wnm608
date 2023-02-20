@@ -4,40 +4,48 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
-		Test
-
+		Cool Website
 	</title>
+	<link rel="stylesheet" href="lib/css/styleguide.css" href="">
+	<link rel="stylesheet" href="css/storetheme.css" href="">
+
 </head>
 <body>
 
-<header>
-	<h1>Cool Website</h1>
-	<p>Such a cool website</p>
-
-
-
+<header class="navbar">
+	<div class="container display-flex">
+		<div class="flex-none">	
+		<h1>Cool Website</h1>
+		</div>
+		<div class="flex-strech"></div>
+		<nav class="flex-none nav">
+			<ul class="container display-flex">
+			<li><a href="#article1">Link 1</a></li>
+			<li><a href="#article2">Link 2</a></li>
+			<li><a href="#article3">Link 3</a></li>
+			<li><a href="#article4">Link 4</a></li>
+		</ul>
+	</nav>
+</div>
 </header>
 
-<nav class="nav">
-	<ul>
-		<li><a href="#article1">Link 1</a></li>
-		<li><a href="#article2">Link 2</a></li>
-		<li><a href="#article3">Link 3</a></li>
-		<li><a href="#article4">Link 4</a></li>
-	</ul>
-</nav>
-
-
 <div class="container">
-	<article class="article" id="article1">
-		<h2>Article 1</h2>
+	<article id="article1" class="article card soft">
+		<div class="display-flex flex-align-center">
+			<div class="flex-stretch">
+				<h2>Article 1</h2>
+			</div>
+			<div class="flex-none">
+				<small>5:20am</small>
+			</div>
+		</div>
 		<div class="article-body">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, laborum perferendis! Ex, iusto. Neque incidunt quaerat rem eos, explicabo? Reiciendis id odit soluta consequuntur quae quis facilis deserunt similique! Id minus ratione eos, recusandae minima facilis voluptate rerum quos, nostrum!</p>
 			<p>Itaque at mollitia aperiam! Nostrum odio voluptates nisi inventore beatae exercitationem sunt ex qui. Eos dolorum quasi in doloremque dignissimos recusandae ullam omnis, facilis aut quo architecto reprehenderit commodi, quis ad mollitia cumque consequatur illum optio eius ipsam eum? Consequuntur!</p>
 			<p>Voluptas minus reiciendis sequi cumque corrupti ratione culpa cum omnis, quam officia commodi, exercitationem, non sunt nesciunt temporibus dolorum repellendus! Distinctio vitae tempora qui quam totam deleniti hic deserunt sit et consequuntur, reiciendis, magnam ex fugit quae, dignissimos nesciunt, aut.</p>
 		</div>
 	</article>
-	<article class="article" id="article2">
+	<article class="article card hard" id="article2">
 		<h2>Article 2</h2>
 		<div class="article-body">
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti animi ea, fugit totam corporis, nobis distinctio, saepe velit ipsam amet quis, officia sapiente aut quas et at alias natus odio ullam magni. Harum voluptate beatae labore accusamus, officiis velit! Inventore!</p>
@@ -45,6 +53,11 @@
 			<p>Molestias quam eaque, totam dolorum distinctio earum consequuntur consequatur fugit, mollitia facere! Maxime ea amet, facere blanditiis? Dolorem ipsum sed eaque eligendi commodi culpa magni illum laboriosam ratione, est debitis, accusamus aliquid. Pariatur doloremque laudantium amet ab vitae architecto dicta!</p>
 		</div>
 	</article>
+</div>
+<div class="view-window" style="background image:url('img/tree.jpg')">
+	
+</div>
+<div class="container">
 	<article class="article" id="article3">
 		<h2>Article 3</h2>
 		<div class="article-body">
