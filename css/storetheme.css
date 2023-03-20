@@ -1,8 +1,81 @@
-
 :root {
-	--color-offwhite:#f4f4f4;
+	--color-offwhite: #f4f4f4;
+
+	--color-main-light: #cbebf9;
+	--color-main-medium: #2592c3;
+	--color-main-dark: #052b3c;
 }
 
 body {
 	background-color: var(--color-offwhite);
+}
+
+
+.figure.product {
+	border-radius: 0.5em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.product-overlay {
+	position: relative;
+	overflow: hidden;
+	color: var(--color-white);
+}
+
+.product-overlay figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-overlay:hover figcaption {
+	opacity: 1;
+}
+
+.product-overlay .caption-body {
+	background-color: var(--color-main-medium);
+	border-radius: 0.5em;
+	padding: 1em;
+	transform: translateY(2em);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover .caption-body {
+	transform: translateY(0);
+}
+
+.product-overlay img {
+	transform: scale(1, 1);
+	transition: all 0.3s;
+}
+
+.product-overlay:hover img {
+	transform: scale(1.4, 1.4);
+}
+
+@media (max-width:600px) {
+	.product-overlay figcaption {
+		position: relative;
+		display: block;
+		top: initial;
+		left: initial;
+		width: 100%;
+		height: initial;
+		opacity: 1;
+		background-color: initial;
+	}
+
+	.product-overlay .caption-body {
+		transform: none;
+		padding: 0;
+	}
 }
