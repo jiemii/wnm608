@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Jie Mi",
+        "type": "Student",
+        "email": "jmi2@art.edu",
+        "classes": [
+            608
+        ]
+    },
+    {
+        "name": "Phoebe Buffay",
+        "type": "Singer",
+        "email": "phoebe@earthlink.net",
+        "classes": [
+            601,
+            608,
+            617,
+            820
+        ]
+    },
+    {
+        "name": "Joey Tribbiani",
+        "type": "Actor",
+        "email": "joeytribs@aol.com",
+        "classes": [
+            601,
+            608,
+            617,
+            820
+        ]
+    },
+    {
+        "name": "Chandler Bing",
+        "type": "Who Knows",
+        "email": "bingtastic@yahoo.com",
+        "classes": [
+            601,
+            608,
+            617,
+            820
+        ]
+    },
+    {
+        "name": "Monica Gellar",
+        "type": "Chef",
+        "email": "mgellar1973@hotmail.com",
+        "classes": [
+            601,
+            608,
+            617,
+            820
+        ]
+    }
+]
