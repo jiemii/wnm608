@@ -10,6 +10,18 @@ body {
 	background-color: var(--color-offwhite);
 }
 
+.favorite label {
+	transition: all 0.3s;
+	display: inline-block;
+	transform: scale(1, 1);
+	color: var(--color-neutral-medium);
+}
+
+.favorite input:checked+label {
+	color: red;
+	transform: scale(1.5, 1.5);
+}
+
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
