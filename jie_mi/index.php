@@ -10,7 +10,7 @@
 
 <body>
     <?php include "parts/navbar.php"; ?>
-    <div class="view-window" style="background-image: url(img/mountain001.jpg)">
+    <div class="view-window" style="background-image: url(img/tree.jpg)">
         <div class="fill-parent display-flex flex-align-center flex-justify-center">
             <div class="card soft">
                 Products!

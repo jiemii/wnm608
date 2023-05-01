@@ -35,7 +35,7 @@ $image_elements = array_reduce($images, function ($r, $o) {
             <div class="col-xs-12 col-md-7">
                 <div class="card soft">
                     <div class="images-main">
-                        <img src="/aau/wnm608/Lan_Hai/images/store/<?= $product->thumbnail ?>">
+                        <img src="/aau/wnm608/jie_mi/img/store/<?= $product->thumbnail ?>">
                     </div>
                     <div class="images-thumbs">
                         <?= $image_elements ?>

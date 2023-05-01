@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-    <?php 
-   
+    <?php
+
     echo "<div> Hello World </div>";
     echo "<div> Goodbye World </div>";
 
@@ -17,7 +19,7 @@
 
 
     // String Interpolation
-    echo "<div>I have $a things</div>"; 
+    echo "<div>I have $a things</div>";
     echo '<div>I have $a things</div>';
 
 
@@ -25,11 +27,11 @@
 
     // Number 
     // Integer 
-    $b = 15; 
+    $b = 15;
     // Float
     $b = 0.576;
 
-    $b= 10;
+    $b = 10;
 
 
 
@@ -54,118 +56,118 @@
 
     // Concatenation
     echo "<div>b + a" . " = c</div>";
-    echo "<div>$b + $a = ". ($a+$b). " </div>";
+    echo "<div>$b + $a = " . ($a + $b) . " </div>";
 
     ?>
 
     <hr>
     <div>This is my name</div>
     <div>
-    
-    <?php
-    
-    $firstname = Hamilton;
-    $lastname = Cline;
-    $fullname = "$firstname $lastname";
-    
-    echo $fullname;
 
-    ?> 
-    <hr>
-    <?php
+        <?php
 
-    // superglobal
-    // ?name=Joey
-    echo "<a href='?name=Joey'>visit</a><br>";
-    echo "<div>My name is {$_GET['name']}</div>";
+        $firstname = Jimmy;
+        $lastname = Mi;
+        $fullname = "$firstname $lastname";
 
-    // ?name=Joey&Joey&type=textarea
-    echo "<a href='?name=Joey&Joey&type=textarea'>visit</a><br>";
-    echo "<{$_GET['type']}>My name is {$_GET['name']}</{$_GET['type']}>";
-        
-    ?>
-    <hr>
-    <?php
+        echo $fullname;
 
-    // Array
-    $colors = array("red", "green", "blue");
+        ?>
+        <hr>
+        <?php
 
-    echo $colors [2];
+        // superglobal
+        // ?name=Joey
+        echo "<a href='?name=Joey'>visit</a><br>";
+        echo "<div>My name is {$_GET['name']}</div>";
 
-    echo "
+        // ?name=Joey&Joey&type=textarea
+        echo "<a href='?name=Joey&Joey&type=textarea'>visit</a><br>";
+        echo "<{$_GET['type']}>My name is {$_GET['name']}</{$_GET['type']}>";
+
+        ?>
+        <hr>
+        <?php
+
+        // Array
+        $colors = array("red", "green", "blue");
+
+        echo $colors[2];
+
+        echo "
         <br>$colors[0]
         <br>$colors [1]
         <br>$colors [2]
     ";
 
-    echo count($colors);
+        echo count($colors);
 
-    ?>
+        ?>
 
-    <div style="color:<?= $colors [1] ?>">
-        This text is green
-    </div>
+        <div style="color:<?= $colors[1] ?>">
+            This text is green
+        </div>
 
-    <hr>
-    <?php
+        <hr>
+        <?php
 
 
-    // Associative Array 
-    $colorsAssociative = [ 
-        "red" => "#f00",
-        "green" => "#0f0", 
-        "blue" => "#00f"
-    ];
+        // Associative Array 
+        $colorsAssociative = [
+            "red" => "#f00",
+            "green" => "#0f0",
+            "blue" => "#00f"
+        ];
 
-    echo $colorsAssociative ['green'];
+        echo $colorsAssociative['green'];
 
-    ?> 
-    <hr> 
-    <?php
-    
-    // Casting
-    $c = "$a";
-    $d = $c*1;
-    
-    $colorsObject = (object)$colorsAssociative;
+        ?>
+        <hr>
+        <?php
 
-    // echo $colorsObject;
+        // Casting
+        $c = "$a";
+        $d = $c * 1;
 
-    echo "<hr>";
-    
-    // Array Index Notation
-    echo $colors[0]."<br>";
-    echo $colorsAssociative ['red']."<br>";
-    echo $colorsAssociative[$colors[0]]."<br>";
+        $colorsObject = (object)$colorsAssociative;
 
-    // Object Property Notation
-    echo $colorsObject->red."<br>";
-    echo $colorsObject->{$colors[0]}."<br>";
+        // echo $colorsObject;
 
-    ?>
+        echo "<hr>";
 
-    <hr>
+        // Array Index Notation
+        echo $colors[0] . "<br>";
+        echo $colorsAssociative['red'] . "<br>";
+        echo $colorsAssociative[$colors[0]] . "<br>";
 
-    <?php
+        // Object Property Notation
+        echo $colorsObject->red . "<br>";
+        echo $colorsObject->{$colors[0]} . "<br>";
 
-    print_r($colors); 
-    echo "<hr>";
-    print_r($colorsAssociative);
-    echo "<hr>";
-    echo "<pre>", print_r($colorsObject), "</pre>";
+        ?>
 
-    // Function
-    function print_p($v) {
-        echo "<pre>", print_r($v),"</pre>";
-    }
+        <hr>
 
-    print_p($_GET);
-    ?>
-    
+        <?php
+
+        print_r($colors);
+        echo "<hr>";
+        print_r($colorsAssociative);
+        echo "<hr>";
+        echo "<pre>", print_r($colorsObject), "</pre>";
+
+        // Function
+        function print_p($v)
+        {
+            echo "<pre>", print_r($v), "</pre>";
+        }
+
+        print_p($_GET);
+        ?>
+
 
 
 
 </body>
+
 </html>
-
-

@@ -7,7 +7,7 @@ function productListTemplate($r, $o)
 <a class="col-xs-12 col-md-4" href="product_item.php?id=$o->id">
 	<figure class="figure product display-flex flex-column">
 		<div class="flex-stretch">
-			<img src="/aau/wnm608/Lan_Hai/images/store/$o->thumbnail" alt="">
+			<img src="/aau/wnm608/jie_mi/img/store/$o->thumbnail" alt="">
 		</div>
 		<figcaption class="flex-none">
 			<div>&dollar;$o->price</div>
@@ -38,7 +38,7 @@ function cartListTemplate($r, $o)
 	$selectamount = selectAmount($o->amount, 10);
 	return $r . <<<HTML
 	<div class="display-flex card-section"> <div class="flex-none images-thumbs">
-	<img src="/images/store/$0->thumbnail"> </div>
+	<img src="/img/store/$0->thumbnail"> </div>
 	<div class="flex-stretch">
 	<strong>$0->title ($o-> amount)</strong>
 	<form action="cart_actions.php?action=delete-cart-item" method="post">
