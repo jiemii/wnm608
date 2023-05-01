@@ -10,18 +10,31 @@ body {
 	background-color: var(--color-offwhite);
 }
 
-
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	height: 100%;
+	transition: all 0.3s;
+}
+
+.product.figure img {
+	height: 100%;
+	object-fit: contain;
+}
+
+.productlist a {
+	text-decoration: none;
+	font-weight: initial;
+}
+
+.product.figure:hover {
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .product-overlay {
 	position: relative;
 	overflow: hidden;
-	color: var(--color-white);
 }
 
 .product-overlay figcaption {
@@ -30,7 +43,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	transition: all 0.3s;
 	display: flex;
@@ -43,7 +56,7 @@ body {
 }
 
 .product-overlay .caption-body {
-	background-color: var(--color-main-medium);
+	background-color: white;
 	border-radius: 0.5em;
 	padding: 1em;
 	transform: translateY(2em);
@@ -79,4 +92,26 @@ body {
 		transform: none;
 		padding: 0;
 	}
+}
+
+.images-main img {
+	width: 100%;
+	height: 40vh;
+	object-fit: contain;
+}
+
+.images-thumbs img {
+	width: 8em;
+	height: 6em;
+	object-fit: contain;
+}
+
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+
+span.badge:not(:empty)::before {
+	content: ')';
 }

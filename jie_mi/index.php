@@ -1,20 +1,28 @@
-<?php
-include_once "lib/php/functions.php";
-include_once "parts/templates.php";
-?>
+<?php include_once "lib/php/functions.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home</title>
     <meta charset="UTF-8">
-
-    <?php include "parts/meta.php" ?>
+    <title>Landing Page</title>
+    <?php include "parts/meta.php"; ?>
 </head>
 
 <body>
     <?php include "parts/navbar.php"; ?>
-    <h1>Home Page</h1>
+    <div class="view-window" style="background-image: url(img/mountain001.jpg)">
+        <div class="fill-parent display-flex flex-align-center flex-justify-center">
+            <div class="card soft">
+                Products!
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card soft">
+            <h2>Information</h2>
+            <p>You'll love these products</p>
+        </div>
+    </div>
 </body>
 
 </html>

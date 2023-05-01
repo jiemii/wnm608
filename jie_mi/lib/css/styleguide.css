@@ -389,6 +389,10 @@ figure img {
 	transition: all .1s ease-in-out;
 }
 
+.form-button.inline {
+	width: initial;
+}
+
 .form-button:hover {
 	text-decoration: none;
 	transform: scale(1.02);
