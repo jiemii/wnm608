@@ -66,8 +66,8 @@
 
         <?php
 
-        $firstname = Jimmy;
-        $lastname = Mi;
+        $firstname = "Jimmy";
+        $lastname = "Mi";
         $fullname = "$firstname $lastname";
 
         echo $fullname;
@@ -82,7 +82,7 @@
         echo "<div>My name is {$_GET['name']}</div>";
 
         // ?name=Joey&Joey&type=textarea
-        echo "<a href='?name=Joey&Joey&type=textarea'>visit</a><br>";
+        echo "<a href='?name=Joey&type=textarea'>visit</a><br>";
         echo "<{$_GET['type']}>My name is {$_GET['name']}</{$_GET['type']}>";
 
         ?>
@@ -96,8 +96,8 @@
 
         echo "
         <br>$colors[0]
-        <br>$colors [1]
-        <br>$colors [2]
+        <br>$colors[1]
+        <br>$colors[2]
     ";
 
         echo count($colors);
@@ -159,7 +159,7 @@
         // Function
         function print_p($v)
         {
-            echo "<pre>", print_r($v), "</pre>";
+            echo "<pre>", print_r($v, true), "</pre>";
         }
 
         print_p($_GET);

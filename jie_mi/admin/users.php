@@ -79,31 +79,28 @@ function showUserPage($user)
 
 
     $form = <<<HTML
-
     <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&action=$create_or_update">
-        <h2>$add_or_edit User</h2>
+            <h2>$add_or_edit User</h2>
         <div class="form-control">
-            <label class="form-label" for="user-name">Name</label>
-            <input type="text" placeholder="Type User Name" class="form-input" name="user-name" id="user-name" value="$user->name">
+        <label class="form-label" for="user-name">Name</label>
+        <input class="form-input" name="user-name" id="user-name" type="text" value="$user->name" placeholder="Enter the User Name"> </div>
+        <div class="form-control">
+        <label class="form-label" for="user-type">Type</label>
+        <input class="form-input" name="user-type" id="user-type" type="text" value="$user->type" placeholder="Enter the User Type"> </div>
+        <div class="form-control">
+        <label class="form-label" for="user-email">Email</label>
+        <input class="form-input" name="user-email" id="user-email" type="text" value="$user->email" placeholder="Enter the User Email">
         </div>
         <div class="form-control">
-            <label class="form-label" for="user-type">Type</label>
-            <input type="text" placeholder="Type User Type" class="form-input" name="user-type" id="user-type" value="$user->type">
+        <label class="form-label" for="user-classes">Classes</label>
+        <input class="form-input" name="user-classes" id="user-classes" type="text" value="$classes" placeholder="Enter the User Classes, comma separated">
         </div>
         <div class="form-control">
-            <label class="form-label" for="user-email">Email</label>
-            <input type="email" placeholder="Type User Email" class="form-input" name="user-email" id="user-email" value="$user->email">
+        <input class="form-button" type="submit" value="Save Changes">
         </div>
-        <div class="form-control">
-            <label class="form-label" for="user-classes">Classes</label>
-            <input type="text" placeholder="Type User Classes, comma separated " class="form-input" name="user-classes" id="user-classes" value="$classes">
-        </div>
-        <div class="form-control">
-            <button type="submit" class="form-button form-control" name="formSubmit">Save Changes</button>
-        </div>
-    </form>
-        
+        </form>
     HTML;
+
 
     $output = $id == "new" ? $form :
         "<div class='grid gap'>
@@ -124,6 +121,9 @@ function showUserPage($user)
     HTML;
 }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">

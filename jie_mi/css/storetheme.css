@@ -22,6 +22,60 @@ body {
 	transform: scale(1.5, 1.5);
 }
 
+
+
+
+@media (max-width: 800px) {
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.navbar h1 {
+		padding-left: 0.5em;
+	}
+}
+
+.menu-button label {
+	display: none;
+}
+
+@media (max-width:400px) {
+	.navbar .display-flex {
+		flex-wrap: wrap;
+	}
+
+	.navbar .nav {
+		width: 100%;
+		display: none;
+	}
+
+	.navbar .nav-flex ul {
+		display: block;
+	}
+
+	.navbar .nav li {
+		line-height: 2em;
+	}
+
+	.menu-button label {
+		display: block;
+		padding: 1em;
+	}
+
+	#menu:checked+.navbar .nav {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

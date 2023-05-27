@@ -1,3 +1,5 @@
+<?php
+
 include_once "parts/templates.php";
 
 ?>
@@ -7,7 +9,9 @@ include_once "parts/templates.php";
 <head>
     <meta charset="UTF-8">
     <title>Product List</title>
+
     <?php include "parts/meta.php"; ?>
+
     <script src="lib/js/functions.js"></script>
     <script src="js/templates.js"></script>
     <script src="js/product_list.js"></script>
@@ -28,7 +32,7 @@ include_once "parts/templates.php";
 
     <div class="form-control">
         <div class="card soft">
-            <div class="display-flex">
+            <div class="display-flex flex-wrap">
                 <div class="flex-stretch display=flex">
                     <div class="flex-none">
                         <button data-filter="category" data-value="" type="button" class="form-button">All</button>

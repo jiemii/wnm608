@@ -6,5 +6,5 @@
         "All property names must be in quotation marks",
         "All string quotation marks must be double quotes",
         "Use a linter like jsonlint.com to check json"
-    }
-]
+    ]
+}
