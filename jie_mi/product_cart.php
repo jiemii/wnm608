@@ -9,11 +9,11 @@ include_once "parts/templates.php";
 
 <head>
     <meta charset="UTF-8">
-    <title>Cart Page</title>
+    <title>Cart</title>
 
 
 
-    <?php include "parts/meta.php"; ?>
+    <?php include "parts/the_meta.php"; ?>
 </head>
 
 <body>
@@ -33,6 +33,9 @@ include_once "parts/templates.php";
                 <div class="col-xs-12 col-md-5">
                     <div class="card soft flat">
                         <?= cartTotals() ?>
+                        <div class="card-section">
+                            <a href="product_checkout.php" class="form-button">Checkout</a>
+                        </div>
                     </div>
                 </div>
             </div>

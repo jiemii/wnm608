@@ -1,16 +1,20 @@
 <?php
 
 include_once "parts/templates.php";
+include_once "lib/php/functions.php";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Product List</title>
 
-    <?php include "parts/meta.php"; ?>
+    <?php include "parts/the_meta.php"; ?>
 
     <script src="lib/js/functions.js"></script>
     <script src="js/templates.js"></script>
@@ -18,7 +22,7 @@ include_once "parts/templates.php";
 </head>
 
 <body>
-    <?php include "parts/navbar.php"; ?>
+    <?php include "parts/header.php"; ?>
 
     <div class="container">
         <h2>Product List</h2>
@@ -50,6 +54,8 @@ include_once "parts/templates.php";
                     <select class="js-sort">
                         <option value="1">Newest</option>
                         <option value="2">Oldest</option>
+                        <option value="3">Low To High</option>
+                        <option value="4">High To Low</option>
                     </select>
                 </div>
             </div>
