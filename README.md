@@ -1,10 +1,4 @@
+# wnm608
 
-## Relevant Links
-- http://www.jimmymi.org/aau/wnm608/jie_mi/
-- http://www.jimmymi.org/aau/wnm608/jie_mi/styleguide
-- http://www.jimmymi.org/aau/wnm608/jie_mi/admin
-
-## Extra Links
-- http://www.jimmymi.org/aau/wnm608/jie_mi/admin/users.php
-- http://www.jimmymi.org/aau/wnm608/jie_mi/notes
-- http://www.jimmymi.org/aau/wnm608/jie_mi/notes/reading_data.php
+## Welcome
+This is the class README. The README file contains project or folder information. Don't edit this file. Create your own student folder, and put all of you files into there for the rest of the semester.

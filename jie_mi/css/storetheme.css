@@ -1,31 +1,52 @@
 :root {
 	--color-offwhite: #f4f4f4;
+	--color-white: #fff;
 
-	--color-main-light: #cbebf9;
-	--color-main-medium: #2592c3;
-	--color-main-dark: #052b3c;
+	--color-main-light: #bdd7ff;
+	--color-main-medium: #39a2ff;
+	--color-main-dark: #00008e;
+
+	/* PROJECT THEME */
+	--font-theme-title: "june-expt-variable", sans-serif;
+	--font-theme-body: "elza-text", sans-serif;
+	;
+
+	--color-theme-light: #b8d9a9;
+	--color-theme-medium: #5db130;
+	--color-theme-dark: #096a30;
+
+	--color-theme-bg: #eff6ea;
+
+	--color-text-light: #e6e6e7;
+	--color-text-medium: #4d5156;
+	--color-text-dark: #01060D;
 }
 
 body {
-	background-color: var(--color-offwhite);
+	background-color: var(--color-white);
+	padding-bottom: 4em;
 }
+
+
 
 .favorite label {
 	transition: all 0.3s;
 	display: inline-block;
 	transform: scale(1, 1);
-	color: var(--color-neutral-medium);
+	color: var(--color-theme-light);
 }
 
 .favorite input:checked+label {
 	color: red;
-	transform: scale(1.5, 1.5);
+	transform: scale(1.3, 1.3);
 }
 
 
 
 
-@media (max-width: 800px) {
+
+
+@media (max-width:800px) {
 	.container {
 		padding-left: 1em;
 		padding-right: 1em;
@@ -60,7 +81,7 @@ body {
 
 	.menu-button label {
 		display: block;
-		padding: 1em;
+		padding: 0.1em;
 	}
 
 	#menu:checked+.navbar .nav {
@@ -70,21 +91,17 @@ body {
 
 
 
-
-
-
-
-
-
 .figure.product {
 	border-radius: 0.5em;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
+	width: 250;
 	height: 100%;
 	transition: all 0.3s;
 }
 
 .product.figure img {
+	width: 250px;
 	height: 100%;
 	object-fit: contain;
 }
@@ -97,6 +114,7 @@ body {
 .product.figure:hover {
 	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
+
 
 .product-overlay {
 	position: relative;
@@ -117,29 +135,33 @@ body {
 	justify-content: center;
 }
 
+
 .product-overlay:hover figcaption {
 	opacity: 1;
 }
 
 .product-overlay .caption-body {
-	background-color: white;
+	/*    background-color: white;*/
+	background-color: var(--color-theme-bg);
+	color: var(--color-text-dark);
 	border-radius: 0.5em;
 	padding: 1em;
 	transform: translateY(2em);
-	transition: all 0.3s;
+	transition: all 0, 3s;
 }
 
 .product-overlay:hover .caption-body {
 	transform: translateY(0);
 }
 
+/*Product-overlay Img*/
 .product-overlay img {
 	transform: scale(1, 1);
-	transition: all 0.3s;
+	transition: all 0, 3s;
 }
 
 .product-overlay:hover img {
-	transform: scale(1.4, 1.4);
+	transform: scale(1.2);
 }
 
 @media (max-width:600px) {
@@ -160,6 +182,8 @@ body {
 	}
 }
 
+
+
 .images-main img {
 	width: 100%;
 	height: 40vh;
@@ -173,11 +197,10 @@ body {
 }
 
 
-
 span.badge:not(:empty)::after {
 	content: ')';
 }
 
 span.badge:not(:empty)::before {
-	content: ')';
+	content: '(';
 }
